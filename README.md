@@ -2,19 +2,21 @@
 
 ```typescript
 import { App } from 'reapex'
-import modalPlugin from 'reapex-plugin-modal'
+import registryPlugin from 'reapex-plugin-component-registry'
 
 const app = new App()
 
 // 1. register the plugin
-const modal = modalPlugin(app, '@@modals')
+const registry = app.plugin(registryPlugin, '@@registry')
 
-// 2. add the modal component to your React application root
-<Provider store={store}>
-  <Registered name="@@modals" />
-</Provider>
+// 2. register a component
+const ComponentA: React.FC<{}> = () =>
+  <div>
+    This is ComponentA A
+  </div>
 
-// show/hide any component
-store.dispatch(modal.mutation.show('modal1', SomeComponent, props))
-store.dispatch(modal.mutation.hide('modal1'))
+registry.register('ComponentA', ComponentA)
+
+// use the registered component
+<registry.Component name="ComponentA" />
 ```
