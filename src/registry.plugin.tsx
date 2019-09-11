@@ -1,4 +1,5 @@
 import React, { ComponentType } from 'react'
+
 import { App } from 'reapex'
 import { connect } from 'react-redux'
 
@@ -29,7 +30,7 @@ const plugin = (app: App, namespace: string = '@@registry') => {
     mapping: {} as Record<string, ComponentType<any> | undefined>
   })
 
-  const mutations = registry.mutations({
+  const [mutations] = registry.mutations({
     register: (name: string, comp: ComponentType<any>) => s => {
       const mapping = s.get('mapping')
       return s.set('mapping', { ...mapping, [name]: comp })

@@ -1,7 +1,7 @@
 import { App } from 'reapex'
 import registryPlugin from '../src'
 
-const app = new App({ mode: 'development' })
+const app = new App()
 
 export const registry = app.plugin(registryPlugin)
 

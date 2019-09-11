@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "jest",
+    "start": "webpack --config webpack.config.js && node server.js",
     "build": "./node_modules/.bin/tsc --outDir lib --declaration",
     "prepublishOnly": "npm run build"
   },
@@ -21,7 +22,6 @@
     "@types/enzyme": "~3.1.10",
     "@types/jest": "~22.2.3",
     "@types/node": "~10.0.2",
-    "@types/react": "~16.8.14",
     "@types/react-dom": "~16.8.4",
     "@types/react-redux": "~5.0.19",
     "ajv": "~6.9.1",
@@ -30,12 +30,15 @@
     "express": "~4.16.3",
     "glob": "~7.1.2",
     "html-webpack-plugin": "~3.2.0",
+    "immutable": "^4.0.0-rc.12",
     "jest": "^24.7.0",
     "jest-enzyme": "^7.0.2",
     "react": "~16.8.6",
     "react-dom": "~16.8.6",
     "react-redux": "~5.1.0",
-    "reapex": "0.6.0",
+    "reapex": "0.8.1",
+    "redux": "^4.0.0",
+    "redux-saga": "^1.0.0",
     "ts-jest": "^24.0.1",
     "ts-loader": "~4.2.0",
     "tslint": "~5.9.1",
@@ -44,9 +47,11 @@
     "webpack-cli": "^3.3.0",
     "webpack-dev-middleware": "~3.1.2"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/react": "^16.9.2"
+  },
   "peerDependencies": {
-    "reapex": ">= 0.6.0"
+    "reapex": ">= 0.8.1"
   },
   "author": "Yulong Ruan <ruanyu1@gmail.com>",
   "license": "MIT",
