@@ -1,6 +1,6 @@
 {
   "name": "reapex-module-component-registry",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "reapex component registry module",
   "main": "lib/index.js",
   "scripts": {
