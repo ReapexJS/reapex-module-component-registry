@@ -1,13 +1,13 @@
-### Reapex modal plugin
+### Reapex component registry module
 
 ```typescript
 import { App } from 'reapex'
-import registryPlugin from 'reapex-plugin-component-registry'
+import registryModule from 'reapex-module-component-registry'
 
 const app = new App()
 
-// 1. register the plugin
-const registry = app.plugin(registryPlugin, '@@registry')
+// 1. register the module
+const registry = app.use(registryModule, '@@registry')
 
 // 2. register a component
 const ComponentA: React.FC<{}> = () =>

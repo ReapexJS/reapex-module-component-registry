@@ -1,3 +1,3 @@
-import registryPlugin from './registry.plugin'
+import registry from "./registry.module";
 
-export default registryPlugin
+export default registry;

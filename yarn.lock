@@ -431,11 +431,6 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.2.tgz#0e58ae66773d7fd7c372a493aff740878ec9ceaa"
   integrity sha512-f8JzJNWVhKtc9dg/dyDNfliTKNOJSLa7Oht/ElZdF/UbMUmAH3rLmAk3ODNjw0mZajDEgatA03tRjB4+Dp/tzA==
 
-"@types/ramda@^0.25.48":
-  version "0.25.51"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.51.tgz#d5421d0e190c56c64c112a761a85782fc971409d"
-  integrity sha512-xcmtfHIgF9SYjhGdsZR1nQslxG4hu0cIpFfLQ4CWdw3KzHvl7ki1AzFLQUkbDTG42ZN3ZsQfdRzXRlkAvbIy5Q==
-
 "@types/react-dom@~16.8.4":
   version "16.8.5"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.8.5.tgz#3e3f4d99199391a7fb40aa3a155c8dd99b899cbd"
@@ -458,14 +453,6 @@
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
-
-"@types/redux-immutable@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@types/redux-immutable/-/redux-immutable-4.0.1.tgz#c9645af458cfcbf019b9e6b4185efcc842e3dac5"
-  integrity sha512-bksf7FrNMsoCy1Zn8F9zAYl5FCM6Qzt/Ln5C1knjdDUzczgtioy0Y01VPlm4aZacCr4nVrCsNyVdy36/4SMsKQ==
-  dependencies:
-    immutable "^4.0.0-rc.1"
-    redux "^4.0.0"
 
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
@@ -2650,12 +2637,12 @@ ignore-walk@^3.0.1:
   dependencies:
     minimatch "^3.0.4"
 
-immutable-state-creator@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/immutable-state-creator/-/immutable-state-creator-1.1.0.tgz#e9e70e6221aba8afcae01ebdb8a505eb0dff9a50"
-  integrity sha512-ZUmAltChD+3+9qmMuP4BSjpC8LAh9ueiL7T047HjKfAZRb/gErLsEeki59p/g364DWiecnFaAfrC6DbGqmnwYw==
+immutable-state-creator@~1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/immutable-state-creator/-/immutable-state-creator-1.2.4.tgz#35fdfbd31d3bd7d14e574bc2a2c218da82ffb677"
+  integrity sha512-a+rAJe5PA207b4F8q8Oti8GkhzZEjn16bHjobGDUSAa2sElcwrWX4vlxVm0c53OJaUN6fhG4OTYvORb+GK7CVQ==
 
-immutable@^4.0.0-rc.1, immutable@^4.0.0-rc.12:
+immutable@^4.0.0-rc.12:
   version "4.0.0-rc.12"
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-4.0.0-rc.12.tgz#ca59a7e4c19ae8d9bf74a97bdf0f6e2f2a5d0217"
   integrity sha512-0M2XxkZLx/mi3t8NVwIm1g8nHoEmM9p9UBl/G9k4+hm0kBgOVdMV/B3CY5dQ8qG8qc80NN4gDV4HQv6FTJ5q7A==
@@ -4565,6 +4552,11 @@ prelude-ls@~1.1.2:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
+prettier@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.5.tgz#d6d56282455243f2f92cc1716692c08aa31522d4"
+  integrity sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
+
 pretty-error@^2.0.2:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/pretty-error/-/pretty-error-2.1.1.tgz#5f4f87c8f91e5ae3f3ba87ab4cf5e03b1a17f1a3"
@@ -4726,11 +4718,6 @@ railroad-diagrams@^1.0.0:
   resolved "https://registry.yarnpkg.com/railroad-diagrams/-/railroad-diagrams-1.0.0.tgz#eb7e6267548ddedfb899c1b90e57374559cddb7e"
   integrity sha1-635iZ1SN3t+4mcG5Dlc3RVnN234=
 
-ramda@^0.26.0:
-  version "0.26.1"
-  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.26.1.tgz#8d41351eb8111c55353617fc3bbffad8e4d35d06"
-  integrity sha512-hLWjpy7EnsDBb0p+Z3B7rPi3GDeRG5ZtiI33kJhTt+ORCd38AbAIjB/9zRIUoeTbE/AVX5ZkU7m6bznsvrf8eQ==
-
 randexp@0.4.6:
   version "0.4.6"
   resolved "https://registry.yarnpkg.com/randexp/-/randexp-0.4.6.tgz#e986ad5e5e31dae13ddd6f7b3019aa7c87f60ca3"
@@ -4887,15 +4874,12 @@ realpath-native@^1.1.0:
   dependencies:
     util.promisify "^1.0.0"
 
-reapex@0.8.1:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/reapex/-/reapex-0.8.1.tgz#3d3599ded07d0012b374e48af5fad6f6fc691044"
-  integrity sha512-Za//vENVusmiZ6WZ1xLd2VEW07ofUCHNbkWorrX610cgc6TfIHV8Zg0pMIO4uFyosOvmTnbYzB0vrIIQgwqkeA==
+reapex@0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/reapex/-/reapex-0.12.0.tgz#2132f8395b8d991189842c1b1e07cf1f1559f573"
+  integrity sha512-YAFRWuBFEFs7PLIYpPkOSJgvU9ndZ65ivRUZaVwWnQvLkbqH5Oik6ItFPbsrQuu0fbBAKJUCMleFgJ4hFfVOfg==
   dependencies:
-    "@types/ramda" "^0.25.48"
-    "@types/redux-immutable" "^4.0.1"
-    immutable-state-creator "^1.1.0"
-    ramda "^0.26.0"
+    immutable-state-creator "~1.2.4"
     reducer-tools "^1.0.0"
     redux-immutable "^4.0.0"
 

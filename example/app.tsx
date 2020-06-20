@@ -1,8 +1,8 @@
 import { App } from 'reapex'
-import registryPlugin from '../src'
+import registryModule from '../src'
 
 const app = new App()
 
-export const registry = app.plugin(registryPlugin)
+export const registry = app.use(registryModule)
 
 export default app

@@ -1,7 +1,7 @@
 {
-  "name": "reapex-plugin-component-registry",
+  "name": "reapex-module-component-registry",
   "version": "1.0.3",
-  "description": "reapex component registry plugin",
+  "description": "reapex component registry module",
   "main": "lib/index.js",
   "scripts": {
     "test": "jest",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ruanyl/reapex-plugin-component-registry.git"
+    "url": "git+https://github.com/ruanyl/reapex-module-component-registry.git"
   },
   "keywords": [
     "reapex",
@@ -33,10 +33,11 @@
     "immutable": "^4.0.0-rc.12",
     "jest": "^24.7.0",
     "jest-enzyme": "^7.0.2",
+    "prettier": "^2.0.5",
     "react": "~16.8.6",
     "react-dom": "~16.8.6",
     "react-redux": "~5.1.0",
-    "reapex": "0.8.1",
+    "reapex": "0.12.0",
     "redux": "^4.0.0",
     "redux-saga": "^1.0.0",
     "ts-jest": "^24.0.1",
@@ -51,12 +52,19 @@
     "@types/react": "^16.9.2"
   },
   "peerDependencies": {
-    "reapex": ">= 0.8.1"
+    "reapex": ">= 0.10.0"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 120
   },
   "author": "Yulong Ruan <ruanyu1@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ReapexJS/reapex-plugin-component-registry/issues"
+    "url": "https://github.com/ReapexJS/reapex-module-component-registry/issues"
   },
-  "homepage": "https://github.com/ReapexJS/reapex-plugin-component-registry#readme"
+  "homepage": "https://github.com/ReapexJS/reapex-module-component-registry#readme"
 }
