@@ -23,7 +23,7 @@
     "@types/jest": "~22.2.3",
     "@types/react-dom": "~16.8.4",
     "@types/react-redux": "~5.0.19",
-    "ajv": "~6.9.1",
+    "ajv": "~6.12.3",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
     "express": "~4.16.3",
